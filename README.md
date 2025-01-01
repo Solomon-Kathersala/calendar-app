@@ -136,7 +136,7 @@ This project can be deployed using platforms like Vercel, Netlify, or GitHub Pag
    
 4. **Access your app at**:
    ```
-      https://<your-username>.github.io/<repository-name>
+   https://<your-username>.github.io/<repository-name>
    ```
 
 ---
