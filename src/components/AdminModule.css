@@ -31,11 +31,3 @@ h1 {
     max-width: 550px;
     overflow-x: auto;
 }
-
-.cmp-table .ant-table-tbody {
-    height: 40vh;
-}
-
-.comm-table .ant-table-body {
-    height: 40vh;
-}
