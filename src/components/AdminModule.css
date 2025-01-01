@@ -1,0 +1,41 @@
+.btn-mgmt {
+    display: flex;
+    justify-content: flex-end;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.admin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 1.5rem;
+}
+
+.cmp-mgmt, .comm-mgmt{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    max-width: max-content;
+}
+
+.cmp-table .ant-table-container{
+    max-width: 600px;
+    overflow-x: auto;
+}
+
+.comm-table .ant-table-container{
+    max-width: 550px;
+    overflow-x: auto;
+}
+
+.cmp-table .ant-table-tbody {
+    height: 40vh;
+}
+
+.comm-table .ant-table-body {
+    height: 40vh;
+}

@@ -1,0 +1,43 @@
+.app-wrapper{
+  /* background-color: rgb(235, 235, 235); */
+  /* margin: 20px; */
+  padding: 20px;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(235, 235, 235);
+  border-radius: 1rem;
+  max-width: 100vw;
+  overflow-x: auto;
+}
+
+.space {
+  background-color: aliceblue;
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+}
+
+/* App.css */
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-bottom: 2.1rem;
+}
+
+.nav-link {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.nav-link.active {
+  background-color: #007bff;
+  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,131 @@
+.notification {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem;
+}
+
+.user-head{
+    margin-bottom: -78px;
+}
+
+.user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 2rem;
+}
+
+.dashboard, .calendar {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.overdue {
+    background-color: red;
+    color: white;
+    border-radius: 0.5em;
+    padding: 1px 5px;
+}
+
+.dueToday {
+    background-color: rgb(244, 255, 97);
+    border-radius: 0.5em;
+    padding: 1px 5px;
+}
+
+.finished {
+    background-color: rgb(132, 231, 132);
+    border-radius: 0.5em;
+    padding: 1px 5px;
+}
+
+.scheduled {
+    padding: 1px 5px;;
+}
+
+.dashboard .ant-table-container{
+    width: 750px;
+}
+
+.calHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: -10px 0px;
+}
+
+.calHead p{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.dropdown {
+    background-color: rgb(235, 235, 235);
+    border-radius: 1rem;
+    padding: 10px 19px;
+}
+
+.dropdown select{
+    background-color: transparent;
+    border: none;
+    padding-right: 0.5em;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+select option{
+    font-size: small;
+}
+
+.fc-toolbar-title {
+    width: 40vh;
+}
+
+.fc-today-button.fc-button.fc-button-primary {
+    border-radius: 0.25rem;
+    background-color: #007bff;
+    border: none;
+}
+
+.fc-prev-button.fc-button.fc-button-primary, .fc-next-button.fc-button.fc-button-primary {
+    border-radius: 50px !important;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    color: black;
+    background-color: rgb(235, 235, 235);
+}
+
+.fc-prev-button.fc-button.fc-button-primary {
+    margin-right: 0.12em !important;
+}
+
+.fc-next-button.fc-button.fc-button-primary {
+    margin-left: 0.12em !important;
+}
+
+
+
+
+/* .fc-theme-standard .fc-scrollgrid{
+    border: none !important;
+}
+
+.fc-theme-standard td, .fc-theme-standard th{
+    border: none !important;
+} */
+
+/* .fc-scrollgrid {
+    overflow: hidden !important;
+} */
+
+/* .fc-scroller {
+    overflow: hidden !important;
+} */
+
+/* .fc-view-harness.fc-view-harness-active{
+    height: 400px !important;
+} */
