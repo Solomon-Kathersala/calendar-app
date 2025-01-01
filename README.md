@@ -1,70 +1,152 @@
-# Getting Started with Create React App
+# Calendar Application for Communication Tracking
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a **Calendar Application for Communication Tracking** designed to stramline the management of company communications. It provides a dashboard, a notification system, and a calendar to track, update, and manage communications across various companies. Built using **React** and **Ant Design**, it offers an intuitive UI for efficient handling of communication-related tasks.
+It provides two main modules:
 
-## Available Scripts
+1. **Admin Module**: For companies and their communication methods.
+2. **User Module**: For logging and tracking communication history with companies.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+### Admin Module
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Company Management**:
+  - Add, edit, or delete companies.
+  - Manage details like company name, location, LinkedIn profile, emails, phone numbers, comments, and communication periodicity.
+  - Prevents duplicate entries based on name, email, or phone number.
+ 
+- **Communication Method Management**:
+  - Add, edit, or delete communication methods.
+  - Manage details like method name, description, sequence, and whether it is mandatory.
 
-### `npm run build`
+### User Module
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Dashboard**:
+  - View a summary of communications for each company.
+  - Display the last five finished communications and the next scheduled communication.
+  - Log new communications with details like type, date, and notes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Calendar Integration**:
+  - Displays all scheduled communications in a monthly calendar view.
+  - Includes year navigation for tracking communications across different periods.
+ 
+- **Notifications**:
+  - Alerts for overdue and due-today communications.
+  - Provides an interactive table for updating communication statuses.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## File Structure
 
-### `npm run eject`
+### Components
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **`AdminModule.js`**:
+   - Handles company and communicatio method management.
+   - Features modals for adding or editing entries and a table for data display.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **`UserModule.js`"":
+   - Displays the dashboard with communication summaries.
+   - Integrates a calendar view for visualizing communications.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Technologies Used
 
-## Learn More
+- **React**: For building the user interface.
+- **Ant Design**: For UI components (e.g., tables, modals, forms).
+- **FullCalendar**: For the calendar view.
+- **Moment.js**: For date manipulation and formatting.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Installation
 
-### Code Splitting
+### Prerequisites
+- Node.js (>= 14.x)
+- npm or yarn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Steps
 
-### Analyzing the Bundle Size
+1. **Clone the repository**:
+   ```bash
+   git clone <repository_url>
+   cd <repository_name>
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-### Making a Progressive Web App
+3. **To install ant design, full calendar, and moment**:
+   ```bash
+   npm install antd
+   npm install @fullcalendar/react @fullcalendar/daygrid @fullcalendar/timegrid @fullcalendar/interaction
+   npm install moment
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. **Start the development server**:
+   ```bash
+   npm start
+   ```
+   
+   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Usage
 
-### Deployment
+- **Admin**: Manage companies and communication methods.
+- **Users**: Log, track, and manage communication history with companies through the dashboard, calendar, and notifications.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project can be deployed using platforms like Vercel, Netlify, or GitHub Pages. Follow the instructions below to deploy on GitHub Pages:
+
+### GitHub Pages
+
+1. **Install `gh-pages`**:
+   ```bash
+   npm install gh-pages --save-dev
+   ```
+   
+2. **Add scripts to `package.json`**:
+   ```json
+   "homepage": "https://<your-username>.github.io/<repository-name>",
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d build"
+   }
+   ```
+   
+3. **Deploy**:
+   ```bash
+   npm run deploy
+   ```
+   
+4. **Access your app at**:
+   ```
+      https://<your-username>.github.io/<repository-name>
+   ```
+
+---
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure the code adheres to the existing style and conventions.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
