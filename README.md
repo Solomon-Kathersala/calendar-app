@@ -52,7 +52,7 @@ It provides two main modules:
    - Handles company and communicatio method management.
    - Features modals for adding or editing entries and a table for data display.
 
-2. **`UserModule.js`"":
+2. **`UserModule.js`**:
    - Displays the dashboard with communication summaries.
    - Integrates a calendar view for visualizing communications.
 
