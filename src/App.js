@@ -7,7 +7,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/calendar-app">
       <AppContent />
     </Router>
   );
@@ -36,6 +36,7 @@ function AppContent() {
           </Link>
         </Space>
       </nav>
+      <h1>Calendar Application for Communication Tracking</h1>
 
       <Routes>
         <Route path="/admin" element={<AdminModule setCompNames={setCompNames} />} />
