@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HashRouter as Router, Routes, Route, Link, useLocation, Navigate} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, useLocation, Navigate} from "react-router-dom";
 import {Space} from "antd";
 import AdminModule from "./components/AdminModule";
 import UserModule from "./components/UserModule";
